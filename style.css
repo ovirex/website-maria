@@ -87,6 +87,10 @@ body{
     font-size: 2.5rem;
     
 }
+
+h1 > a {
+    font-size: 1.6em;
+}
 .repetition {
     font-size: 2.5rem;
     display: flex;
@@ -153,7 +157,7 @@ body{
 .yellow-blob, .yellow-blob-top, .yellow-blob-bottom, .red-blob, .blue-blob {
     position: absolute;
     fill: #FFB600;
-    width: 50vw;  /* add a problematic space inside the element **/
+    width: 10vw;  /* add a problematic space inside the element **/
     z-index: -1;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
@@ -161,7 +165,7 @@ body{
     
 }  
 .yellow-blob {
-    top: 5%;
+    top: 10%;
     left: 42%;
 }
 .yellow-blob-top {
@@ -205,6 +209,8 @@ body{
     transform-origin: 50% 50%; */
 }
 
+/**********Contact Page***********/
+
 form{
     display: flex;
     align-items: center;
@@ -215,16 +221,35 @@ form{
 }
 form textarea {
     margin-top: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: hidden;
+    width: 25vmax;
 }
 form input {
     border-radius: 10px;
-    width: 365px;
+    width: 25vmax;
     height: 30px;
     margin-bottom: 10px;
+    border: hidden;
+}
+
+form input::placeholder {
+    padding-left: 10px;
+}
+
+form textarea::placeholder {
+    padding-top: 5px;
+    padding-left: 10px;
 }
 
 
+.contactPage {
+    margin-bottom: 100px;
+}
+
+.contactBtn {
+    font-size: 1.5em;
+}
 
 
 @keyframes move {
@@ -283,7 +308,9 @@ form input {
         font-size: 2rem;        
 
     }
-
+    h1 > a {
+        font-size: 2rem;
+    }
     .centering {
         top: 5%;
     }
@@ -315,12 +342,28 @@ form input {
     #contacto> .centering > .repetition > h2 {
         font-size: 2.6rem;
     }
-    a {
+
+    #portafolio> .centering > .title > h2 {
         font-size: 2.6rem;
-        
+    }
+    #zines> .centering > .title > h2 {
+        font-size: 2.6rem;
+    }
+    #contacto> .centering > .title > h2 {
+        font-size: 2.6rem;
     }
 
+    .pageTitle {
+        margin-bottom: 40px;
+    }
 
+    form {
+        margin: 0;
+    }
+    
+    .yellow-blob{
+        left: 25%;
+    }
 }
 
 /* @media screen and (min-width: 400px) {
@@ -389,6 +432,9 @@ form input {
 @media screen and (min-width: 450px) and (max-width: 1024px) {
     h1 {
         font-size: 4rem;
+    }
+    h1 > a {
+        font-size: 1em;
     }
     .centering {
         top: 20%;
