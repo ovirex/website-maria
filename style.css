@@ -169,8 +169,8 @@ body{
 }
 .yellow-blob-bottom {
     position: absolute;
-    top: 400%;
-    left: 0;
+    top: 85%;
+    left: 10%;
     
     
 }
@@ -182,7 +182,7 @@ body{
 
 .red-blob {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     fill: #DD0000;
     /* width: 50vmax; *//** add a problematic space inside the element **/
@@ -193,8 +193,8 @@ body{
 
 .blue-blob {
     position: absolute;
-    top: 300%;
-    left: 25%;
+    top: 65%;
+    left: 30%;
     fill: #14203b;
     /* width: 50vmax; *//** add a problematic space inside the element **/
     /* z-index: -1;
