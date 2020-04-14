@@ -154,7 +154,7 @@ h1 > a {
 
 /******* BLOBS **********/
 
-.yellow-blob, .yellow-blob-top, .yellow-blob-bottom, .red-blob, .blue-blob {
+.central-blob, .yellow-blob-top, .yellow-blob-bottom, .red-blob, .blue-blob {
     position: absolute;
     fill: #FFB600;
     width: 10vw;  /* add a problematic space inside the element **/
@@ -164,7 +164,7 @@ h1 > a {
     
     
 }  
-.yellow-blob {
+.central-blob {
     top: 10%;
     left: 42%;
 }
@@ -361,7 +361,7 @@ form textarea::placeholder {
         margin: 0;
     }
     
-    .yellow-blob{
+    .central-blob{
         left: 25%;
     }
 }
