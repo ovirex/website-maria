@@ -66,7 +66,9 @@ body{
     line-height: 0.8;
 }
 
-
+#contacto {
+    margin-bottom: 50px;
+}
 /* .prueba {
     width: 100%;
     height: 50%;
@@ -268,7 +270,7 @@ form input {
 
     
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     #portafolio, #zines, #contacto {
         height: 65vh;
     }
@@ -291,16 +293,18 @@ form input {
     }
     .info {
         width: 100%;
+        text-align: center;
+    }
+    .info > p {
+        display: inline-block;
     }
     .repetition{
         -webkit-text-stroke: 0.7px white;
     }
-    
-    
+     
     .profileImg {
         height: 50vh;
     } 
-
 
     #portafolio> .centering > .repetition > h2 {
         font-size: 2.6rem;
@@ -319,19 +323,42 @@ form input {
 
 }
 
-@media screen and (min-width: 400px) {
+/* @media screen and (min-width: 400px) {
     h1 {
         font-size: 2.6rem;
+    }
+    .centering {
+        top: 15%
+    }
+    .repetition {
+        -webkit-text-stroke: 0.7px white;
     }
     .details {
         flex-direction: column;
     }
     
     #description {
-        margin-top: 10%;
+        margin-top: 30%;
+    }
+    #portafolio {
+        margin-top: 20%;
+    }
+    .info {
+        text-align: center;
+    }
+    #description > .details > .info > h2 {
+        font-size: 2.3rem;
+    }
+    #description > .details > .info > h3 {
+        font-size: 1.6rem;
+    }
+    #description > .details > .info > p {
+        display: inline-block;
+        text-align: justify;
     }
     .details > .info > h2 {
-        font-size: 1.6em;
+        
+        font-size: 2em;
     }
     .details > .info > h3 {
         font-size: 1em;
@@ -356,12 +383,45 @@ form input {
     #description, #portafolio, #zines, #contacto {
         height: 70vh;
     }
-}
-
-/* @media screen and (max-width: 1024px) {
-    h1 {
-        font-size: 10rem;
-    }
-
 } */
 
+
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .centering {
+        top: 20%;
+    }
+    .profileImg {
+        padding: 30px;
+    }
+
+}
+
+/* @media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    #main {
+        height: 125vh;
+    }
+    #portafolio > .centering > .title > h2 {
+        font-size: 2.5em;
+    }
+    #portafolio > .centering > .repetition > h2 {
+        font-size: 2.5em;
+    }
+    #zines > .centering > .title > h2 {
+        font-size: 2.5em;
+    }
+    #zines > .centering > .repetition > h2 {
+        font-size: 2.5em;
+    }
+    #contacto > .centering > .title > h2 {
+        font-size: 2.5em;
+    }
+    #contacto > .centering > .repetition > h2 {
+        font-size: 2.5em;
+    }
+} */
