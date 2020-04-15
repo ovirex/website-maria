@@ -33,7 +33,7 @@ body{
 #main, #portafolio, #zines, #contacto {
     height: 100vh;
     line-height: 0.8;
-    border: 10px red dashed;
+    /* border: 10px red dashed; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,6 +234,9 @@ form textarea {
     border-radius: 15px;
     border: hidden;
     width: 25vmax;
+    color: black;
+    padding-top: 5px;
+    padding-left: 10px;
 }
 form input {
     border-radius: 10px;
@@ -241,17 +244,9 @@ form input {
     height: 30px;
     margin-bottom: 10px;
     border: hidden;
+    color: black;
+    padding-left: 20px;
 }
-
-form input::placeholder {
-    padding-left: 10px;
-}
-
-form textarea::placeholder {
-    padding-top: 5px;
-    padding-left: 10px;
-}
-
 
 .subPage {
     margin-bottom: 100px;
