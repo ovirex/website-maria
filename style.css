@@ -104,7 +104,7 @@ h1 > a {
 
 .pageTitle {
     position: relative;
-    font-size: 1.7em;
+    font-size: 1em;
     top: 8%;
 }
 
@@ -154,7 +154,7 @@ h1 > a {
 
 /******* BLOBS **********/
 
-.central-blob, .yellow-blob-top, .yellow-blob-bottom, .red-blob, .blue-blob {
+.central-blob, .blob-top, .blob-bottom, .red-blob, .blue-blob, .gD-blob, .iL-blob {
     position: absolute;
     fill: #FFB600;
     width: 10vw;  /* add a problematic space inside the element **/
@@ -164,16 +164,25 @@ h1 > a {
     
     
 }  
+
+.gD-blob { 
+    left: 25%;
+}
+
+.iL-blob {
+    
+    left: 70%;
+}
 .central-blob {
-    top: 10%;
+    top: 2%;
     left: 42%;
 }
-.yellow-blob-top {
+.blob-top {
     top: 5%;
     left: 0;  
     
 }
-.yellow-blob-bottom {
+.blob-bottom {
     position: absolute;
     top: 85%;
     left: 10%;
@@ -216,6 +225,7 @@ form{
     align-items: center;
     flex-flow: column;
     margin-top: 8rem;
+    margin-bottom: 100px;
     line-height: 2em;
     
 }
@@ -243,7 +253,7 @@ form textarea::placeholder {
 }
 
 
-.contactPage {
+.subPage {
     margin-bottom: 100px;
 }
 
@@ -251,6 +261,23 @@ form textarea::placeholder {
     font-size: 1.5em;
 }
 
+
+/*** portafolio Page  ****/
+.categories {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#graphicDesign > .repetition {
+    -webkit-text-stroke: 0.8px white;
+    line-height: 1;
+}
+#ilustration > .repetition {
+    -webkit-text-stroke: 0.8px white;
+    line-height: 1;
+}
 
 @keyframes move {
     0%   { transform: scale(1); }
@@ -309,7 +336,7 @@ form textarea::placeholder {
 
     }
     h1 > a {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .centering {
         top: 5%;
@@ -434,7 +461,7 @@ form textarea::placeholder {
         font-size: 4rem;
     }
     h1 > a {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .centering {
         top: 20%;
