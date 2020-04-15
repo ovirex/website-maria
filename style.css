@@ -324,7 +324,7 @@ form textarea::placeholder {
 
 @media screen and (max-width: 450px) {
     #portafolio, #zines, #contacto {
-        height: 65vh;
+        height: 100vh;
     }
 
     #main {
@@ -391,6 +391,32 @@ form textarea::placeholder {
     .central-blob{
         left: 25%;
     }
+
+    .categories {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #graphicDesign > .title {
+        font-size: 2em;
+    }
+    #graphicDesign > .title{
+        text-align: center;
+    }
+
+    #graphicDesign > .repetition {
+        font-size: 2em;
+        text-align: center;
+    }
+    #ilustration > .title {
+        font-size: 2em;
+    }
+    #ilustration > .repetition {
+        font-size: 2em;
+        
+    }
+
 }
 
 /* @media screen and (min-width: 400px) {
@@ -468,6 +494,10 @@ form textarea::placeholder {
     }
     .profileImg {
         padding: 30px;
+    }
+
+    .categories {
+        padding: 0 20px 0 20px;
     }
 
 }
