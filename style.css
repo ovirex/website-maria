@@ -236,16 +236,16 @@ form textarea {
     width: 25vmax;
     color: black;
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 12px;
 }
 form input {
-    border-radius: 10px;
+    border-radius: 7px;
     width: 25vmax;
     height: 30px;
     margin-bottom: 10px;
     border: hidden;
     color: black;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .subPage {
