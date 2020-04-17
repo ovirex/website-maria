@@ -391,8 +391,7 @@ form input {
     .categories {
         flex-direction: column;
         justify-content: space-evenly;
-        margin-top: 100px;
-        margin-bottom: 100px;
+
     }
     #graphicDesign > .title {
         font-size: 1.4em;
