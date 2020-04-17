@@ -127,7 +127,7 @@ h1 > a {
 
 .profileImg > img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 .profileImg{
     width: 100%;
@@ -414,71 +414,70 @@ form input {
 
 }
 
-/* @media screen and (min-width: 400px) {
+
+@media screen and (min-width: 450px) and (max-width: 700px) {
     h1 {
-        font-size: 2.6rem;
+        font-size: 1em;
     }
-    .centering {
-        top: 15%
+
+    h1 > a {
+        font-size: 2.5em;  
     }
-    .repetition {
-        -webkit-text-stroke: 0.7px white;
+
+    #description {
+        margin-top: 11%;
     }
+
     .details {
         flex-direction: column;
     }
-    
-    #description {
-        margin-top: 30%;
-    }
-    #portafolio {
-        margin-top: 20%;
-    }
+
     .info {
         text-align: center;
     }
-    #description > .details > .info > h2 {
-        font-size: 2.3rem;
-    }
-    #description > .details > .info > h3 {
-        font-size: 1.6rem;
-    }
-    #description > .details > .info > p {
+
+    .info > p {
         display: inline-block;
-        text-align: justify;
-    }
-    .details > .info > h2 {
-        
-        font-size: 2em;
-    }
-    .details > .info > h3 {
-        font-size: 1em;
-    }
-    .details > .info > p {
-        font-size: 0.6sem;
     }
 
-    #portafolio> .centering > .repetition > h2 {
-        font-size: 2.6rem;
+    #main > .centering > .repetition > h1 {
+
+        -webkit-text-stroke: 0.8px;
     }
-    #zines> .centering > .repetition > h2 {
-        font-size: 2.6rem;
+
+    #portafolio > .centering > .repetition > h2 {
+        font-size: 1.4em;
+        line-height: 0.9;
+        -webkit-text-stroke: 0.9px;
     }
-    #contacto> .centering > .repetition > h2 {
-        font-size: 2.6rem;
+    #zines > .centering > .repetition > h2 {
+        font-size: 1.4em;
+        line-height: 0.9;
+        -webkit-text-stroke: 0.9px;
     }
-    a {
-        font-size: 2.6rem;
-        
+    #contacto > .centering > .repetition > h2 {
+        font-size: 1.4em;
+        line-height: 0.9;
+        -webkit-text-stroke: 0.9px;
     }
-    #description, #portafolio, #zines, #contacto {
-        height: 70vh;
+
+    #portafolio > .centering > .title > h2{
+        font-size: 1.4em;
     }
-} */
+    #zines > .centering > .title > h2{
+        font-size: 1.4em;
+    }
+    #contacto > .centering > .title > h2{
+        font-size: 1.4em;   
+    }
+    .profileImg {
+        height: 50vh;
+        width: 50vh;
+    }
+}
 
 
-
-@media screen and (min-width: 450px) and (max-width: 1024px) {
+@media screen and (min-width: 700px) and (max-width: 1024px) {
     h1 {
         font-size: 4rem;
     }
@@ -498,61 +497,3 @@ form input {
 
 }
 
-@media screen and (min-width: 450px) and (max-width: 700px) {
-    h1 {
-        font-size: 1em;
-    }
-    h2 > a {
-        font-size: 0.7em;
-        
-    }
-    
-    #description {
-        margin-top: 11%;
-    }
-    .details {
-        flex-direction: column;
-    }
-    .info {
-        text-align: center;
-    }
-    .info > p {
-        display: inline-block;
-    }
-    #portafolio > .centering >.repetition > h2 {
-        line-height: 0.6;
-    }
-    #zines > .centering >.repetition > h2 {
-        line-height: 0.6;
-    }
-    #contacto > .centering >.repetition > h2 {
-        line-height: 0.6;
-    }
-
-
-/* @media screen and (min-width: 1024px) {
-    h1 {
-        font-size: 2.5em;
-    }
-    #main {
-        height: 125vh;
-    }
-    #portafolio > .centering > .title > h2 {
-        font-size: 2.5em;
-    }
-    #portafolio > .centering > .repetition > h2 {
-        font-size: 2.5em;
-    }
-    #zines > .centering > .title > h2 {
-        font-size: 2.5em;
-    }
-    #zines > .centering > .repetition > h2 {
-        font-size: 2.5em;
-    }
-    #contacto > .centering > .title > h2 {
-        font-size: 2.5em;
-    }
-    #contacto > .centering > .repetition > h2 {
-        font-size: 2.5em;
-    }
-} */
