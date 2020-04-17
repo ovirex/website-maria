@@ -414,7 +414,15 @@ form input {
         -webkit-text-stroke: 0.6px;
     }
 
-
+    .central-blob > svg {
+        height: 100px;
+        width: 100px;
+    }
+    .central-blob {
+        left: 35%;
+        bottom: -30px;
+        width: 30%;
+    }
 
 }
 
