@@ -174,8 +174,8 @@ h1 > a {
     left: 70%;
 }
 .central-blob {
-    top: 2%;
-    left: 42%;
+    bottom: -90px;
+    left: 30%;
 }
 .blob-top {
     top: 5%;
@@ -327,7 +327,7 @@ form input {
     }
 
     h1 {
-        font-size: 2rem;        
+        font-size: 1.8rem;        
 
     }
     h1 > a {
@@ -477,6 +477,7 @@ form input {
 } */
 
 
+
 @media screen and (min-width: 450px) and (max-width: 1024px) {
     h1 {
         font-size: 4rem;
@@ -496,6 +497,38 @@ form input {
     }
 
 }
+
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    h1 {
+        font-size: 1em;
+    }
+    h2 > a {
+        font-size: 0.7em;
+        
+    }
+    
+    #description {
+        margin-top: 11%;
+    }
+    .details {
+        flex-direction: column;
+    }
+    .info {
+        text-align: center;
+    }
+    .info > p {
+        display: inline-block;
+    }
+    #portafolio > .centering >.repetition > h2 {
+        line-height: 0.6;
+    }
+    #zines > .centering >.repetition > h2 {
+        line-height: 0.6;
+    }
+    #contacto > .centering >.repetition > h2 {
+        line-height: 0.6;
+    }
+
 
 /* @media screen and (min-width: 1024px) {
     h1 {
