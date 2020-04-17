@@ -253,7 +253,14 @@ form input {
 }
 
 .contactBtn {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: transparent;
+    margin-top: 10px;
+}
+
+.contactBtn:hover{
+    cursor: pointer;
 }
 
 
