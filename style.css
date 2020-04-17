@@ -395,23 +395,26 @@ form input {
         margin-bottom: 100px;
     }
     #graphicDesign > .title {
-        font-size: 2em;
+        font-size: 1.4em;
     }
     #graphicDesign > .title{
         text-align: center;
     }
 
     #graphicDesign > .repetition {
-        font-size: 2em;
+        font-size: 1.4em;
         text-align: center;
+        -webkit-text-stroke: 0.7px;
     }
     #ilustration > .title {
-        font-size: 2em;
+        font-size: 1.4em;
     }
     #ilustration > .repetition {
-        font-size: 2em;
-        
+        font-size: 1.4em;
+        -webkit-text-stroke: 0.6px;
     }
+
+
 
 }
 
