@@ -381,6 +381,7 @@ form input {
 
     form {
         margin: 0;
+        margin-bottom: 100px;
     }
     
     .central-blob{
