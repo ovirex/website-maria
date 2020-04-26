@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Hanson-Bold";
-    src: url("/public/Fuentes/Hanson-Bold.otf") format("truetype"),
-        url("/public/Fuentes/Hanson-Bold.ttf") format("truetype");
+    src: url("/Fuentes/Hanson-Bold.otf") format("truetype"),
+        url("/Fuentes/Hanson-Bold.ttf") format("truetype");
 }
 
 * {
