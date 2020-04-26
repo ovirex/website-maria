@@ -1,25 +1,26 @@
 {
-  "name": "mariaescribe",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ovirex/website-maria.git"
-  },
-  "author": "Ovidio Perez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ovirex/website-maria/issues"
-  },
-  "homepage": "https://github.com/ovirex/website-maria#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+    "name": "mariaescribe",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ovirex/website-maria.git"
+    },
+    "author": "Ovidio Perez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ovirex/website-maria/issues"
+    },
+    "homepage": "https://github.com/ovirex/website-maria#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    }
 }
