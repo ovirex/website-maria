@@ -1,5 +1,6 @@
 const express = require("express");
 const server = express();
+const { PORT } = require("./config");
 
 server.use(express.static("./public"));
 
@@ -21,6 +22,6 @@ server.get("*", (req, res) => {
     res.status(404).send("Page Not Found!");
 });
 
-server.listen(3000, () => {
+server.listen(PORT, () => {
     console.log("Server running");
 });
