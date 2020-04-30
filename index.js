@@ -12,6 +12,8 @@ server.use(express.static("./public"));
 
 let transport = nodemailer.createTransport({
     service: "gmail",
+    /*host: "smtp.gmail.com",
+    port: 465,*/
     auth: {
         user: process.env.USER,
         pass: process.env.PASS,
@@ -30,10 +32,11 @@ server.get("/contact", (req, res) => {
 server.post("/contact", (req, res) => {
     const { email, subject, message } = req.body;
     const messageToSend = {
-        from: "'Ovidio Perez' <oapm10@gmail.com>", // Sender address
-        to: "oapm10@gmail.com", // List of recipients
+        from: `'${email}' <${email}>`, // Sender address
+        to: "mariaescribemails@gmail.com", // List of recipients
         subject: subject, // Subject line
         text: message, // Plain text body
+        replyTo: email,
     };
     transport.sendMail(messageToSend, function (err, info) {
         if (err) {
