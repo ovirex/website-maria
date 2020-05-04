@@ -42,37 +42,46 @@
                 </div>
             </div>
 
-            <form action="/contact" method="POST">
-                <label for="clientEmail">
+            <form
+                action="/contact"
+                method="POST"
+                id="contact-form"
+                enctype="application/x-www-form-urlencoded"
+            >
+                <label for="client-email">
                     <input
                         type="email"
                         name="email"
-                        id="clientEmail"
+                        id="client-email"
                         placeholder="e-mail"
                         required
                     />
                 </label>
-                <label for="mailSubject">
+                <label for="mail-subject">
                     <input
                         type="text"
                         name="subject"
-                        id="mailSubject"
+                        id="mail-subject"
                         placeholder="asunto"
                         required
                     />
                 </label>
                 <textarea
                     name="message"
-                    id="clientMessage"
+                    id="client-message"
                     cols="29"
                     rows="6"
                     placeholder="mensaje"
                     required
                 ></textarea>
-                <div class="contactBtn">
-                    <button class="contactBtn" type="submit">enviar</button>
-                </div>
+                <input
+                    id="submit-btn"
+                    class="contactBtn"
+                    type="submit"
+                    value="enviar"
+                />
             </form>
         </main>
+        <script type="text/javascript" src="/js/index.js"></script>
     </body>
 </html>

@@ -45,7 +45,7 @@ server.post("/contact", (req, res) => {
             console.log(info);
         }
     });
-    res.sendFile(__dirname + "/views/contact.html");
+    res.sendStatus(200);
 });
 
 server.get("/portafolio", (req, res) => {
@@ -56,7 +56,7 @@ server.get("/zines", (req, res) => {
 });
 
 server.get("*", (req, res) => {
-    res.status(404).send("Page Not Found!");
+    res.status(404).sendFile(__dirname + "/views/not-found.html");
 });
 
 server.listen(PORT, () => {
