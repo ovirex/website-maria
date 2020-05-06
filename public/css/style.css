@@ -76,6 +76,21 @@ body {
     top: 25%;
 }
 
+/********** Header *************/
+
+header {
+    position: absolute;
+    width: 100%;
+
+    margin-top: 100px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
 /***** Not Found Page *****/
 .notFound {
     display: flex;
