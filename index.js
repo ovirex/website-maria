@@ -51,9 +51,6 @@ server.post("/contact", (req, res) => {
 server.get("/portafolio", (req, res) => {
     res.sendFile(__dirname + "/views/portafolio.html");
 });
-server.get("/zines", (req, res) => {
-    res.sendFile(__dirname + "/views/zines.html");
-});
 
 server.get("*", (req, res) => {
     res.status(404).sendFile(__dirname + "/views/not-found.html");

@@ -33,7 +33,6 @@ body {
 
 #main,
 #portafolio,
-#zines,
 #contacto {
     height: 100vh;
     line-height: 0.8;
@@ -50,14 +49,6 @@ body {
     font-size: 2em;
 }
 #portafolio > .centering > .repetition > h2 {
-    font-size: 2em;
-    line-height: 0.8;
-}
-
-#zines > .centering > .title > h2 {
-    font-size: 2em;
-}
-#zines > .centering > .repetition > h2 {
     font-size: 2em;
     line-height: 0.8;
 }
@@ -333,7 +324,6 @@ form input {
 
 @media screen and (max-width: 450px) {
     #portafolio,
-    #zines,
     #contacto {
         height: 100vh;
     }
@@ -373,9 +363,7 @@ form input {
     #portafolio > .centering > .repetition > h2 {
         font-size: 2.6rem;
     }
-    #zines > .centering > .repetition > h2 {
-        font-size: 2.6rem;
-    }
+
     #contacto > .centering > .repetition > h2 {
         font-size: 2.6rem;
     }
@@ -383,9 +371,7 @@ form input {
     #portafolio > .centering > .title > h2 {
         font-size: 2.6rem;
     }
-    #zines > .centering > .title > h2 {
-        font-size: 2.6rem;
-    }
+
     #contacto > .centering > .title > h2 {
         font-size: 2.6rem;
     }
@@ -480,11 +466,7 @@ form input {
         line-height: 0.9;
         -webkit-text-stroke: 0.9px;
     }
-    #zines > .centering > .repetition > h2 {
-        font-size: 1.4em;
-        line-height: 0.9;
-        -webkit-text-stroke: 0.9px;
-    }
+
     #contacto > .centering > .repetition > h2 {
         font-size: 1.4em;
         line-height: 0.9;
@@ -494,9 +476,7 @@ form input {
     #portafolio > .centering > .title > h2 {
         font-size: 1.4em;
     }
-    #zines > .centering > .title > h2 {
-        font-size: 1.4em;
-    }
+
     #contacto > .centering > .title > h2 {
         font-size: 1.4em;
     }
