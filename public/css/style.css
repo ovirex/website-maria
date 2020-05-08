@@ -127,8 +127,8 @@ header > ul {
 }
 
 .open-close > label > #icon {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     position: absolute;
     left: 80%;
     cursor: pointer;
