@@ -73,7 +73,7 @@ body {
 
 .centering {
     position: relative;
-    top: 25%;
+    top: 20%;
 }
 
 /********** Header *************/
@@ -81,15 +81,16 @@ body {
 header > ul {
     position: fixed;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
     flex-wrap: wrap;
     list-style: none;
-    height: 100px;
+    height: 30%;
     width: 100%;
-
     background-color: rgba(0, 0, 0, 0.452);
     z-index: 1;
+    /* margin: 6em 0 0 0; */
+    padding: 0 8.5em 2em 8.5em;
 }
 /****************************/
 
@@ -595,6 +596,15 @@ form input {
         height: 25%;
     }
 }
+@media screen and (min-width: 630px) and (max-width: 800px) {
+    header > ul {
+        display: none;
+    }
+    .menu-collapse {
+        display: block;
+        height: 25%;
+    }
+}
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
     h1 {
@@ -612,5 +622,9 @@ form input {
 
     .categories {
         padding: 0 20px 0 20px;
+    }
+
+    header > ul {
+        padding: 0 4em 0 4em;
     }
 }
