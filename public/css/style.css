@@ -261,6 +261,10 @@ h1 > a {
     width: 88%;
 }
 
+.portafolio-btn {
+    display: none;
+}
+
 /******* BLOBS **********/
 
 .central-blob,
@@ -422,10 +426,6 @@ form input {
         height: 100vh;
     }
 
-    #main {
-        margin-bottom: 35%;
-    }
-
     h1 {
         font-size: 1.8rem;
     }
@@ -529,11 +529,32 @@ form input {
     }
     .menu-collapse {
         display: block;
-        height: 25%;
+        height: 20%;
     }
     #contacto {
         height: 50vh;
         margin: 0;
+    }
+
+    #description,
+    #portafolio,
+    #contacto {
+        display: none;
+    }
+
+    #main > .centering {
+        top: 10%;
+    }
+    #main > .blob-top {
+        top: 20%;
+        left: 30%;
+    }
+
+    .portafolio-btn {
+        font-size: 1rem;
+        display: block;
+        position: relative;
+        bottom: -40%;
     }
 }
 
@@ -573,7 +594,7 @@ form input {
     }
 
     #contacto > .centering > .repetition > h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         line-height: 0.9;
         -webkit-text-stroke: 0.9px;
     }
@@ -583,7 +604,7 @@ form input {
     }
 
     #contacto > .centering > .title > h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .profileImg {
         height: 50vh;
@@ -601,20 +622,42 @@ form input {
     }
     .menu-collapse {
         display: block;
-        height: 25%;
+        height: 20%;
     }
 
     #contacto {
         height: 50vh;
     }
+
+    #description,
+    #portafolio,
+    #contacto {
+        display: none;
+    }
+
+    #main > .centering {
+        top: 10%;
+    }
+    #main > .blob-top {
+        top: 20%;
+        left: 30%;
+    }
+
+    .portafolio-btn {
+        font-size: 1rem;
+        display: block;
+        position: relative;
+        bottom: -40%;
+    }
 }
+
 @media screen and (min-width: 630px) and (max-width: 800px) {
     header > ul {
         display: none;
     }
     .menu-collapse {
         display: block;
-        height: 25%;
+        height: 20%;
     }
     #contacto {
         height: 50vh;
@@ -627,6 +670,27 @@ form input {
     }
     #contacto > .centering > .title > h2 {
         font-size: 3rem;
+    }
+
+    #description,
+    #portafolio,
+    #contacto {
+        display: none;
+    }
+
+    #main > .centering {
+        top: 10%;
+    }
+    #main > .blob-top {
+        top: 20%;
+        left: 30%;
+    }
+
+    .portafolio-btn {
+        font-size: 1rem;
+        display: block;
+        position: relative;
+        bottom: -35%;
     }
 }
 
