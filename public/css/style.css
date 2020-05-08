@@ -143,8 +143,8 @@ header > ul {
 }
 
 .open-close > label > #icon {
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     position: absolute;
     left: 80%;
     cursor: pointer;
@@ -333,7 +333,7 @@ form {
     display: flex;
     align-items: center;
     flex-flow: column;
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
     margin-bottom: 100px;
     line-height: 2em;
 }
@@ -531,6 +531,9 @@ form input {
         display: block;
         height: 25%;
     }
+    #contacto {
+        height: 50vh;
+    }
 }
 
 @media screen and (min-width: 450px) and (max-width: 700px) {
@@ -569,7 +572,7 @@ form input {
     }
 
     #contacto > .centering > .repetition > h2 {
-        font-size: 1.4em;
+        font-size: 3rem;
         line-height: 0.9;
         -webkit-text-stroke: 0.9px;
     }
@@ -579,7 +582,7 @@ form input {
     }
 
     #contacto > .centering > .title > h2 {
-        font-size: 1.4em;
+        font-size: 3rem;
     }
     .profileImg {
         height: 50vh;
@@ -599,6 +602,10 @@ form input {
         display: block;
         height: 25%;
     }
+
+    #contacto {
+        height: 50vh;
+    }
 }
 @media screen and (min-width: 630px) and (max-width: 800px) {
     header > ul {
@@ -607,6 +614,18 @@ form input {
     .menu-collapse {
         display: block;
         height: 25%;
+    }
+    #contacto {
+        height: 50vh;
+    }
+
+    #contacto > .centering > .repetition > h2 {
+        font-size: 3rem;
+        line-height: 0.9;
+        -webkit-text-stroke: 0.9px;
+    }
+    #contacto > .centering > .title > h2 {
+        font-size: 3rem;
     }
 }
 
