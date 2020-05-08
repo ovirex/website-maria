@@ -93,6 +93,15 @@ header > ul {
 }
 /****************************/
 
+.social-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.menu-content > ul > .social-icon {
+    margin: 0 auto;
+    height: auto;
+}
 /*********** Side Header *******/
 .menu-collapse {
     background-color: rgba(0, 0, 0, 0);
