@@ -509,6 +509,7 @@ form input {
     }
     .menu-collapse {
         display: block;
+        height: 25%;
     }
 }
 
@@ -576,6 +577,7 @@ form input {
     }
     .menu-collapse {
         display: block;
+        height: 25%;
     }
 }
 

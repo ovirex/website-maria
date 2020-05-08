@@ -9,6 +9,7 @@ checkbox.addEventListener("change", () => {
         menuContent.style.display = "block";
         menuCollapse.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
         icon.style.background = "url(/css/cancel.svg) no-repeat";
+        menuCollapse.style.height = "auto";
     } else {
         menuContent.style.display = "none";
         menuCollapse.style.backgroundColor = "rgba(0, 0, 0, 0)";
