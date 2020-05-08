@@ -533,6 +533,7 @@ form input {
     }
     #contacto {
         height: 50vh;
+        margin: 0;
     }
 }
 

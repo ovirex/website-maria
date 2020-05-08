@@ -47,10 +47,12 @@ const btn = document.getElementById("submit-btn");
 btn.addEventListener("click", function (e) {
     e.preventDefault();
 
+    let name = document.getElementById("client-name").value;
     let message = document.getElementById("client-message").value;
     let subject = document.getElementById("mail-subject").value;
     let email = document.getElementById("client-email").value;
     sendData({
+        name: name,
         email: email,
         subject: subject,
         message: message,

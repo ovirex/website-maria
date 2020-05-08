@@ -30,9 +30,9 @@ server.get("/contact", (req, res) => {
 });
 
 server.post("/contact", (req, res) => {
-    const { email, subject, message } = req.body;
+    const { email, subject, message, name } = req.body;
     const messageToSend = {
-        from: `'${email}' <${email}>`, // Sender address
+        from: `'${name} ${email}' <${email}>`, // Sender address
         to: "mariaescribemails@gmail.com", // List of recipients
         subject: subject, // Subject line
         text: message, // Plain text body
