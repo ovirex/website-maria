@@ -14,7 +14,7 @@
 }
 html {
     /* border: 10px dashed green;  */
-    font: 100%;
+    font-size: 100%;
     overflow-x: hidden;
 }
 html,
@@ -262,6 +262,9 @@ h1 > a {
 }
 
 .portafolio-btn {
+    font-size: 1rem;
+    position: relative;
+    bottom: -40%;
     display: none;
 }
 
@@ -388,6 +391,7 @@ form input {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #graphicDesign > .repetition {
@@ -419,6 +423,8 @@ form input {
         transform: scale(1);
     }
 }
+
+/**************** MEDIA QUERIES *********************/
 
 @media screen and (max-width: 450px) {
     #portafolio,
@@ -536,9 +542,13 @@ form input {
         margin: 0;
     }
 
-    #description,
-    #portafolio,
-    #contacto {
+    #home-page > main > #description {
+        display: none;
+    }
+    #home-page > main > #contacto {
+        display: none;
+    }
+    #home-page > main > #portafolio {
         display: none;
     }
 
@@ -551,10 +561,7 @@ form input {
     }
 
     .portafolio-btn {
-        font-size: 1rem;
         display: block;
-        position: relative;
-        bottom: -40%;
     }
 }
 
@@ -629,9 +636,13 @@ form input {
         height: 50vh;
     }
 
-    #description,
-    #portafolio,
-    #contacto {
+    #home-page > main > #description {
+        display: none;
+    }
+    #home-page > main > #contacto {
+        display: none;
+    }
+    #home-page > main > #portafolio {
         display: none;
     }
 
@@ -644,10 +655,7 @@ form input {
     }
 
     .portafolio-btn {
-        font-size: 1rem;
         display: block;
-        position: relative;
-        bottom: -40%;
     }
 }
 
@@ -672,9 +680,13 @@ form input {
         font-size: 3rem;
     }
 
-    #description,
-    #portafolio,
-    #contacto {
+    #home-page > main > #description {
+        display: none;
+    }
+    #home-page > main > #contacto {
+        display: none;
+    }
+    #home-page > main > #portafolio {
         display: none;
     }
 
@@ -687,10 +699,8 @@ form input {
     }
 
     .portafolio-btn {
-        font-size: 1rem;
-        display: block;
-        position: relative;
         bottom: -35%;
+        display: block;
     }
 }
 
@@ -713,6 +723,6 @@ form input {
     }
 
     header > ul {
-        padding: 0 4em 0 4em;
+        padding: 0 4em 1em 4em;
     }
 }
