@@ -1,7 +1,17 @@
+/**** General Font ****/
 @font-face {
     font-family: "Hanson-Bold";
     src: url("/Fuentes/Hanson-Bold.otf") format("truetype"),
         url("/Fuentes/Hanson-Bold.ttf") format("truetype");
+}
+/*** About Page's fonts **/
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("/Fuentes/Gotham-Book-Regular.otf") format("truetype");
+}
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("/Fuentes/Gotham-Bold.otf") format("truetype");
 }
 
 * {
@@ -33,7 +43,8 @@ body {
 
 #main,
 #portafolio,
-#contacto {
+#contacto,
+#about {
     height: 100vh;
     line-height: 0.8;
     /* border: 10px red dashed; */
@@ -57,6 +68,13 @@ body {
     font-size: 2em;
 }
 #contacto > .centering > .repetition > h2 {
+    font-size: 2em;
+    line-height: 0.8;
+}
+#about > .centering > .title > h2 {
+    font-size: 2em;
+}
+#about > .centering > .repetition > h2 {
     font-size: 2em;
     line-height: 0.8;
 }
@@ -237,9 +255,10 @@ h1 > a {
 
 .profileImg > img {
     max-width: 100%;
-    height: 100%;
+    height: auto;
 }
 .profileImg {
+    padding: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -250,7 +269,7 @@ h1 > a {
     order: 2;
 }
 .info > h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 .info > h3 {
     font-size: 1.5rem;
@@ -266,6 +285,19 @@ h1 > a {
     position: relative;
     bottom: -40%;
     display: none;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.btn-container > a {
+    margin: 30px 0 0 0;
 }
 
 /******* BLOBS **********/
@@ -385,7 +417,7 @@ form input {
     -webkit-text-fill-color: transparent;
 }
 
-/*** portafolio Page  ****/
+/*********** portafolio Page  ***********/
 .categories {
     height: 100vh;
     display: flex;
@@ -402,7 +434,49 @@ form input {
     -webkit-text-stroke: 0.8px white;
     line-height: 1;
 }
+/**************************************/
 
+#about-page > main > #description {
+    height: auto;
+}
+
+#about-page > main > #description > .details > .profileImg {
+    align-self: flex-start;
+}
+
+.info > .info-title > h2 {
+    font-size: 4vw;
+}
+
+#about-page > main > #description > .details > .info {
+    width: 100%;
+    margin-right: 5%;
+}
+
+#about-page > main > #description > .details > .info > .text {
+    text-align: justify;
+    width: 43.5vw;
+}
+
+#about-page > main > #description > .details > .info > .text > p {
+    font-family: Gotham-Book;
+    align-self: flex-start;
+
+    line-height: 2;
+}
+#about-page > main > #description > .details > .info > .text > p > span {
+    font-family: Gotham-Bold;
+    align-self: flex-start;
+}
+
+#about > .centering > .repetition > h2 {
+    line-height: 1;
+}
+#about > .centering > .title > h2 {
+    line-height: 1;
+}
+
+/*********** BLOBS ANIMATION **************/
 @keyframes move {
     0% {
         transform: scale(1);
@@ -427,10 +501,11 @@ form input {
 /**************** MEDIA QUERIES *********************/
 
 @media screen and (max-width: 450px) {
-    #portafolio,
-    #contacto {
+    /* #portafolio,
+    #contacto,
+    #about {
         height: 100vh;
-    }
+    } */
 
     h1 {
         font-size: 1.8rem;
@@ -473,6 +548,13 @@ form input {
     }
 
     #contacto > .centering > .title > h2 {
+        font-size: 2.6rem;
+    }
+
+    #about > .centering > .title > h2 {
+        font-size: 2.6rem;
+    }
+    #about > .centering > .repetition > h2 {
         font-size: 2.6rem;
     }
 
@@ -541,7 +623,10 @@ form input {
         height: 50vh;
         margin: 0;
     }
-
+    #about {
+        height: 70vh;
+        margin: 0;
+    }
     #home-page > main > #description {
         display: none;
     }
@@ -562,6 +647,23 @@ form input {
 
     .portafolio-btn {
         display: block;
+    }
+
+    #about > .centering > .title > h2 {
+        font-size: 2rem;
+    }
+    #about > .centering > .repetition > h2 {
+        font-size: 2rem;
+    }
+    .info > .info-title > h2 {
+        font-size: 7vw;
+    }
+    #about-page > main > #description > .details > .info > .text {
+        width: 76vw;
+        margin: 0 auto;
+    }
+    #about-page > main > #description > .details > .info {
+        margin: 0;
     }
 }
 
@@ -613,6 +715,16 @@ form input {
     #contacto > .centering > .title > h2 {
         font-size: 3.5rem;
     }
+    #about > .centering > .repetition > h2 {
+        font-size: 3.5rem;
+        line-height: 0.9;
+        -webkit-text-stroke: 0.9px;
+    }
+
+    #about > .centering > .title > h2 {
+        font-size: 3.5rem;
+    }
+
     .profileImg {
         height: 50vh;
         width: 50vh;
@@ -636,6 +748,9 @@ form input {
         height: 50vh;
     }
 
+    #about {
+        height: 70vh;
+    }
     #home-page > main > #description {
         display: none;
     }
@@ -657,6 +772,25 @@ form input {
     .portafolio-btn {
         display: block;
     }
+
+    #about-page > main > #description > .details > .profileImg {
+        align-self: center;
+    }
+
+    .btn-container {
+        width: 100%;
+    }
+
+    .info > .info-title > h2 {
+        font-size: 7vw;
+    }
+    #about-page > main > #description > .details > .info > .text {
+        width: 76vw;
+        margin: 0 auto;
+    }
+    #about-page > main > #description > .details > .info {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 630px) and (max-width: 800px) {
@@ -670,6 +804,9 @@ form input {
     #contacto {
         height: 50vh;
     }
+    #about {
+        height: 70vh;
+    }
 
     #contacto > .centering > .repetition > h2 {
         font-size: 3rem;
@@ -680,6 +817,14 @@ form input {
         font-size: 3rem;
     }
 
+    #about > .centering > .repetition > h2 {
+        font-size: 3rem;
+        line-height: 0.9;
+        -webkit-text-stroke: 0.9px;
+    }
+    #about > .centering > .title > h2 {
+        font-size: 3rem;
+    }
     #home-page > main > #description {
         display: none;
     }
@@ -713,9 +858,6 @@ form input {
     }
     .centering {
         top: 20%;
-    }
-    .profileImg {
-        padding: 30px;
     }
 
     .categories {
