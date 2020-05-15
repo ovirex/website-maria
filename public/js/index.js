@@ -2,7 +2,15 @@ function sendData(data) {
     console.log("Sending data");
 
     const XHR = new XMLHttpRequest();
-    const contactForm = document.getElementById("contact-form");
+
+    function formMessage(formResponse) {
+        const contactForm = document.getElementById("contact-form");
+        contactForm.textContent = formResponse;
+        contactForm.style.padding =
+            XHR.status === 500 ? "4em 3em 3em 3em" : "4em 0 3em 0";
+        contactForm.style.fontSize = "1.5rem";
+        contactForm.style.textAlign = "center";
+    }
 
     let urlEncodedData = "",
         urlEncodedDataPairs = [],
@@ -21,10 +29,14 @@ function sendData(data) {
 
     // Define what happens on successful data submission
     XHR.addEventListener("load", function (event) {
-        contactForm.textContent = "¡Gracias por tu mensaje!";
-        contactForm.style.padding = "4em 0 3em 0";
-        contactForm.style.fontSize = "1.5rem";
-        contactForm.style.textAlign = "center";
+        console.log("Connected with the server!");
+        if (XHR.status === 500) {
+            console.error("Something went wrong");
+            formMessage("Ups, parece que hubo un problema, intente de nuevo");
+        } else if (XHR.status === 200) {
+            console.log("Email sent!");
+            formMessage("¡Gracias por tu mensaje!");
+        }
     });
 
     // Define what happens in case of error
@@ -46,6 +58,8 @@ const btn = document.getElementById("submit-btn");
 
 btn.addEventListener("click", function (e) {
     e.preventDefault();
+
+    this.disabled = true;
 
     let name = document.getElementById("client-name").value;
     let message = document.getElementById("client-message").value;

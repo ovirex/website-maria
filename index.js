@@ -37,7 +37,7 @@ server.post("/contact", (req, res) => {
     const { email, subject, message, name } = req.body;
     const messageToSend = {
         from: `'${name} ${email}' <${email}>`, // Sender address
-        to: "mariaescribemails@gmail.com", // List of recipients
+        to: "oapm10@gmail.com", // List of recipients
         subject: subject, // Subject line
         text: message, // Plain text body
         replyTo: email,
@@ -45,11 +45,13 @@ server.post("/contact", (req, res) => {
     transport.sendMail(messageToSend, function (err, info) {
         if (err) {
             console.log(err);
+            res.sendStatus(500);
         } else {
             console.log(info);
+            console.log("Email Sent!");
+            res.sendStatus(200);
         }
     });
-    res.sendStatus(200);
 });
 
 server.get("/portafolio", (req, res) => {
