@@ -34,24 +34,30 @@ server.get("/contact", (req, res) => {
 });
 
 server.post("/contact", (req, res) => {
-    const { email, subject, message, name } = req.body;
+    const { name, email, subject, message } = req.body;
+
     const messageToSend = {
         from: `'${name} ${email}' <${email}>`, // Sender address
-        to: "oapm10@gmail.com", // List of recipients
+        to: "mariaescribemails@gmail.com", // List of recipients
         subject: subject, // Subject line
         text: message, // Plain text body
         replyTo: email,
     };
-    transport.sendMail(messageToSend, function (err, info) {
-        if (err) {
-            console.log(err);
-            res.sendStatus(500);
-        } else {
-            console.log(info);
-            console.log("Email Sent!");
-            res.sendStatus(200);
-        }
-    });
+
+    if (validateForm(name, email, subject, message)) {
+        transport.sendMail(messageToSend, function (err, info) {
+            if (err) {
+                console.log(err);
+                res.sendStatus(500);
+            } else {
+                console.log(info);
+                console.log("Email Sent!");
+                res.sendStatus(200);
+            }
+        });
+    } else {
+        res.sendStatus(422);
+    }
 });
 
 server.get("/portafolio", (req, res) => {
@@ -65,3 +71,24 @@ server.get("*", (req, res) => {
 server.listen(PORT, () => {
     console.log("Server running");
 });
+
+function validateForm(name, email, subject, message) {
+    /** Alternative and simpler regex 
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ 
+    **/
+    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    let emailValidator = emailRegex.test(email);
+
+    const fieldsArr = [name, subject, message];
+
+    let fieldsValidator = fieldsArr.every((item) => {
+        return item !== "";
+    });
+
+    if (fieldsValidator && emailValidator) {
+        return true;
+    } else {
+        return false;
+    }
+}
