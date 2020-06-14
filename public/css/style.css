@@ -422,21 +422,43 @@ form input {
 }
 
 /*********** portafolio Page  ***********/
-.categories {
+.portafolio-options {
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#graphicDesign > .repetition {
-    -webkit-text-stroke: 0.8px white;
-    line-height: 1;
+.categories-title > h2 {
+    font-size: 4.1vw;
+    text-align: center;
 }
-#ilustration > .repetition {
-    -webkit-text-stroke: 0.8px white;
-    line-height: 1;
+
+.options-container > .btn-container {
+    flex-direction: row;
+    margin-top: 110px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    width: 69%;
+}
+
+#graphicDesign > .title > h3 {
+    font-size: 3vw;
+    padding: 0 100px 0 0;
+}
+#ilustration > .title > h3 {
+    font-size: 3vw;
+}
+#graphicDesign > .title > h3 > a:hover {
+    -webkit-text-fill-color: white;
+}
+#ilustration > .title > h3 > a:hover {
+    -webkit-text-fill-color: white;
 }
 /**************************************/
 
@@ -575,28 +597,19 @@ form input {
         left: 25%;
     }
 
-    .categories {
+    .portafolio-options {
         flex-direction: column;
         justify-content: space-evenly;
+        height: 40vh;
     }
     #graphicDesign > .title {
         font-size: 1.4em;
-    }
-    #graphicDesign > .title {
         text-align: center;
     }
 
-    #graphicDesign > .repetition {
-        font-size: 1.4em;
-        text-align: center;
-        -webkit-text-stroke: 0.7px;
-    }
     #ilustration > .title {
         font-size: 1.4em;
-    }
-    #ilustration > .repetition {
-        font-size: 1.4em;
-        -webkit-text-stroke: 0.6px;
+        text-align: center;
     }
 
     .central-blob > svg {
@@ -668,6 +681,25 @@ form input {
     }
     #about-page > main > #description > .details > .info {
         margin: 0;
+    }
+
+    .options-container > .btn-container {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #graphicDesign > .title > h3 {
+        font-size: 5vw;
+        padding: 0 30px 0 30px;
+    }
+    #ilustration > .title > h3 {
+        font-size: 5vw;
+        padding: 0 30px 0 30px;
+        margin-top: 40px;
+    }
+
+    #portafolio {
+        height: 50vh;
     }
 }
 
@@ -795,6 +827,27 @@ form input {
     #about-page > main > #description > .details > .info {
         margin: 0;
     }
+
+    .options-container > .btn-container {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #graphicDesign > .title > h3 {
+        font-size: 5vw;
+        padding: 0 40px 0 40px;
+        text-align: center;
+    }
+    #ilustration > .title > h3 {
+        font-size: 5vw;
+        padding: 0 30px 0 30px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #portafolio {
+        height: 65vh;
+    }
 }
 
 @media screen and (min-width: 630px) and (max-width: 800px) {
@@ -851,6 +904,30 @@ form input {
         bottom: -35%;
         display: block;
     }
+
+    .options-container > .btn-container {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #graphicDesign > .title > h3 {
+        font-size: 5vw;
+        padding: 0 50px 0 40px;
+        text-align: center;
+    }
+    #ilustration > .title > h3 {
+        font-size: 5vw;
+        padding: 0 30px 0 30px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #portafolio {
+        height: 70vh;
+    }
+    .categories-title > h2 {
+        font-size: 3.65vw;
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
@@ -864,7 +941,7 @@ form input {
         top: 20%;
     }
 
-    .categories {
+    .portafolio-options {
         padding: 0 20px 0 20px;
     }
 
