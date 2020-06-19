@@ -64,6 +64,10 @@ server.get("/portafolio", (req, res) => {
     res.sendFile(__dirname + "/views/portafolio.html");
 });
 
+server.get("/graphic-design", (req, res) => {
+    res.sendFile(__dirname + "/views/graphic-design.html");
+});
+
 server.get("*", (req, res) => {
     res.status(404).sendFile(__dirname + "/views/not-found.html");
 });

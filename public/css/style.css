@@ -502,6 +502,50 @@ form input {
     line-height: 1;
 }
 
+.design-categorie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.design-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.design-img-container {
+    width: 30%;
+}
+.design-img-container > img {
+    max-width: 100%;
+    height: auto;
+}
+.design-description {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.design-description > img {
+    max-width: 100%;
+}
+
+.design-description > h2 {
+    font-size: 2.4rem;
+}
+.design-description > p {
+    font-family: Gotham-Book;
+    line-height: 2.5;
+}
+
+.design-description > a {
+    text-align: right;
+    font-size: 2rem;
+}
+
 /*********** BLOBS ANIMATION **************/
 @keyframes move {
     0% {
@@ -701,6 +745,24 @@ form input {
     #portafolio {
         height: 50vh;
     }
+
+    .design-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 100px 0;
+    }
+
+    .design-categorie {
+        height: auto;
+    }
+
+    .design-description {
+        width: 80%;
+    }
+
+    .design-img-container {
+        width: 75%;
+    }
 }
 
 @media screen and (min-width: 450px) and (max-width: 700px) {
@@ -848,6 +910,30 @@ form input {
     #portafolio {
         height: 65vh;
     }
+
+    .design-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 100px 0;
+    }
+
+    .design-categorie {
+        height: auto;
+    }
+
+    .design-description {
+        width: 80%;
+    }
+
+    .design-img-container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .design-img-container {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (min-width: 630px) and (max-width: 800px) {
@@ -927,6 +1013,24 @@ form input {
     }
     .categories-title > h2 {
         font-size: 3.65vw;
+    }
+
+    .design-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 100px 0;
+    }
+
+    .design-categorie {
+        height: auto;
+    }
+
+    .design-description {
+        width: 80%;
+    }
+
+    .design-img-container {
+        width: 45%;
     }
 }
 
