@@ -502,6 +502,8 @@ form input {
     line-height: 1;
 }
 
+/************GRAPHIC DESIGN PAGE************/
+
 .design-categorie {
     display: flex;
     align-items: center;
@@ -545,6 +547,30 @@ form input {
     text-align: right;
     font-size: 2rem;
 }
+
+.mockups-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1263.33px;
+    margin: 180px 0 0 0;
+}
+
+.social-img-container > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-img-container {
+    width: 35%;
+    margin: 0 0 100px 0;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+}
+/*****************************************/
 
 /*********** BLOBS ANIMATION **************/
 @keyframes move {
@@ -763,6 +789,16 @@ form input {
     .design-img-container {
         width: 75%;
     }
+
+    .mockups-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 120px 0 0 0;
+    }
+
+    .social-img-container {
+        width: 65%;
+    }
 }
 
 @media screen and (min-width: 450px) and (max-width: 700px) {
@@ -928,6 +964,15 @@ form input {
     .design-img-container {
         width: 75%;
     }
+
+    .mockups-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-img-container {
+        width: 65%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1051,5 +1096,11 @@ form input {
 
     header > ul {
         padding: 0 4em 1em 4em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mockups-container {
+        margin: 235px 0 0 0;
     }
 }
