@@ -70,6 +70,10 @@ server.get("/graphic-design", (req, res) => {
 server.get("/graphic-design/social-media", (req, res) => {
     res.sendFile(__dirname + "/views/social-media.html");
 });
+server.get("/graphic-design/publicidad", (req, res) => {
+    res.sendFile(__dirname + "/views/publicidad.html");
+});
+
 server.get("*", (req, res) => {
     res.status(404).sendFile(__dirname + "/views/not-found.html");
 });

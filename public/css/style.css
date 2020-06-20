@@ -570,6 +570,46 @@ form input {
     display: flex;
     justify-content: center;
 }
+
+.ad-img-container > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ad-img-container {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.rows-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    max-width: 1263.33px;
+}
+
+.ads-container {
+    width: 20%;
+    margin: 0 15px;
+}
+
+.publicidad-container {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.publicidad-container > p {
+    text-align: center;
+    margin: 30px 0 200px 0;
+}
+
+.publicidad-container > p > a {
+    cursor: pointer;
+}
+
 /*****************************************/
 
 /*********** BLOBS ANIMATION **************/
@@ -798,6 +838,19 @@ form input {
 
     .social-img-container {
         width: 65%;
+    }
+
+    .ads-container {
+        width: 35%;
+        margin: 0px 5px;
+    }
+
+    .ad-img-container {
+        margin: 6px 0;
+    }
+
+    .rows-container {
+        margin-top: 130px;
     }
 }
 
