@@ -74,6 +74,10 @@ server.get("/graphic-design/publicidad", (req, res) => {
     res.sendFile(__dirname + "/views/publicidad.html");
 });
 
+server.get("/ilustracion", (req, res) => {
+    res.sendFile(__dirname + "/views/ilustracion.html");
+});
+
 server.get("*", (req, res) => {
     res.status(404).sendFile(__dirname + "/views/not-found.html");
 });

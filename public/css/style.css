@@ -610,6 +610,35 @@ form input {
     cursor: pointer;
 }
 
+.ilustracion-container {
+    column-count: 3;
+    column-gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-gap: 1rem; */
+    margin-top: 200px;
+}
+.ilustracion-container {
+    width: 75%;
+    height: auto;
+}
+.ilus-img-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.ilus-img-container > img {
+    max-width: 100%;
+    height: auto;
+}
+.backToTop-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
 /*****************************************/
 
 /*********** BLOBS ANIMATION **************/
@@ -852,6 +881,10 @@ form input {
     .rows-container {
         margin-top: 130px;
     }
+
+    .ilustracion-container {
+        column-count: 2;
+    }
 }
 
 @media screen and (min-width: 450px) and (max-width: 700px) {
@@ -1025,6 +1058,10 @@ form input {
 
     .social-img-container {
         width: 65%;
+    }
+
+    .ilustracion-container {
+        column-count: 2;
     }
 }
 
