@@ -591,7 +591,7 @@ form input {
 
 .ads-container {
     width: 20%;
-    margin: 0 15px;
+    margin: 0 6px;
 }
 
 .publicidad-container {
@@ -1088,6 +1088,14 @@ form input {
     .ilustracion-container {
         column-count: 2;
     }
+
+    .ad-img-container {
+        margin: 10px 0;
+    }
+    .ads-container {
+        width: 40%;
+        margin: 0 6px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1191,6 +1199,9 @@ form input {
 
     .design-img-container {
         width: 45%;
+    }
+    .ads-container {
+        margin: 0 6px;
     }
 }
 
