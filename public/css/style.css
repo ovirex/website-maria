@@ -570,6 +570,12 @@ form input {
 .social-media-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.social-media-container > p {
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .ad-img-container > img {
@@ -606,10 +612,12 @@ form input {
     text-align: center;
     margin: 30px 0 200px 0;
 }
-
-.publicidad-container > p > a {
+.backToTop-cursor {
     cursor: pointer;
 }
+/* .publicidad-container > p > a {
+    cursor: pointer;
+} */
 
 .ilustracion-container {
     column-count: 3;
