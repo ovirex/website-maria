@@ -521,7 +521,7 @@ form input {
 .design-img-container {
     width: 30%;
 }
-.design-img-container > img {
+.design-img-container > a > img {
     max-width: 100%;
     height: auto;
 }
