@@ -505,6 +505,9 @@ form input {
 }
 
 /************GRAPHIC DESIGN PAGE************/
+#design-page {
+    padding-top: 30px;
+}
 
 .design-categorie {
     display: flex;
@@ -572,6 +575,7 @@ form input {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .social-media-container > p {
@@ -631,7 +635,7 @@ form input {
     margin-top: 200px;
 }
 .ilustracion-container {
-    width: 75%;
+    max-width: 947.5px;
     height: auto;
 }
 .ilus-img-container {
@@ -1246,5 +1250,23 @@ form input {
 @media screen and (min-width: 1024px) {
     .mockups-container {
         margin: 235px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    #design-page {
+        padding-top: 45px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .ilustracion-container {
+        margin-top: 390px;
+    }
+    #design-page {
+        padding-top: 30px;
+    }
+    .mockups-container {
+        margin-top: 390px;
     }
 }
