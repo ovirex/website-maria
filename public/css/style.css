@@ -862,12 +862,13 @@ form input {
     }
 
     #graphicDesign > .title > h3 {
-        font-size: 5vw;
-        padding: 0 30px 0 30px;
+        font-size: 6vw;
+        padding: 0;
     }
     #ilustration > .title > h3 {
-        font-size: 5vw;
-        padding: 0 30px 0 30px;
+        text-align: center;
+        font-size: 6vw;
+        padding: 0;
         margin-top: 40px;
     }
 
