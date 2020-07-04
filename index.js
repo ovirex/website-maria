@@ -11,9 +11,9 @@ server.use(bodyParser.json());
 server.use(express.static("./public"));
 
 let transport = nodemailer.createTransport({
-    service: "gmail",
-    /*host: "smtp.gmail.com",
-    port: 465,*/
+    // service: "gmail",
+    host: "smtp.gmail.com",
+    port: 465,
     auth: {
         user: process.env.USER,
         pass: process.env.PASS,
