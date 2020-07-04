@@ -259,10 +259,11 @@ h1 > a {
 }
 .profileImg {
     padding: 10%;
-    width: 100%;
+    width: 80vw;
     display: flex;
     justify-content: center;
     order: 1;
+    margin: 0 auto;
 }
 .info {
     width: 100%;
@@ -730,9 +731,9 @@ form input {
         -webkit-text-stroke: 0.7px white;
     }
 
-    .profileImg {
+    /* .profileImg {
         height: 50vh;
-    }
+    } */
 
     #portafolio > .centering > .repetition > h2 {
         font-size: 2.6rem;
@@ -988,10 +989,10 @@ form input {
         font-size: 3.5rem;
     }
 
-    .profileImg {
+    /* .profileImg {
         height: 50vh;
         width: 50vh;
-    }
+    } */
     .notFound > .title > h1 {
         font-size: 4em;
     }
