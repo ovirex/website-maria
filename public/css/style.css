@@ -920,6 +920,14 @@ form input {
     .ilustracion-container {
         column-count: 2;
     }
+
+    #contact-page > main > #contacto {
+        margin-top: 50px;
+    }
+
+    #portafolio-page > main > #portafolio {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (min-width: 450px) and (max-width: 700px) {
