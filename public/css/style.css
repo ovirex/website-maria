@@ -1251,6 +1251,9 @@ form input {
     .mockups-container {
         margin: 235px 0 0 0;
     }
+    #design-page {
+        padding-top: 45px;
+    }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
@@ -1264,9 +1267,13 @@ form input {
         margin-top: 390px;
     }
     #design-page {
-        padding-top: 30px;
+        padding-top: 80px;
     }
     .mockups-container {
         margin-top: 390px;
+    }
+
+    .rows-container {
+        margin-top: 330px;
     }
 }
